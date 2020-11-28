@@ -39,16 +39,17 @@ struct SideDishRow: View {
                 }
                 HStack(spacing: 5) {
                     ForEach(dish.deliveryType, id: \.self) { event in
-                        EventView(event: event, textColor: .white, backgroundColor: .purple)
+                        BadgeView(title: event, textColor: .white, backgroundColor: .purple)
                     }
                     ForEach(dish.bagde, id: \.self) { event in
-                        EventView(event: event, textColor: .white, backgroundColor: .orange)
+                        BadgeView(title: event, textColor: .white, backgroundColor: .orange)
                     }
                 }
             }
             .lineLimit(1)
             Spacer()
         }
+        .padding(.vertical, 5)
         .padding(.horizontal, 5)
     }
 }
