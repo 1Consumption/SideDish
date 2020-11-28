@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A5B908FF2571FBBF00FB0D73 /* SideDishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */; };
-		A5B909012571FBBF00FB0D73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B909002571FBBF00FB0D73 /* ContentView.swift */; };
+		A5B909012571FBBF00FB0D73 /* SideDishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B909002571FBBF00FB0D73 /* SideDishView.swift */; };
 		A5B909032571FBC100FB0D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B909022571FBC100FB0D73 /* Assets.xcassets */; };
 		A5B909062571FBC100FB0D73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B909052571FBC100FB0D73 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		A5B908FB2571FBBF00FB0D73 /* SideDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishApp.swift; sourceTree = "<group>"; };
-		A5B909002571FBBF00FB0D73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5B909002571FBBF00FB0D73 /* SideDishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishView.swift; sourceTree = "<group>"; };
 		A5B909022571FBC100FB0D73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5B909052571FBC100FB0D73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5B909072571FBC100FB0D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */,
-				A5B909002571FBBF00FB0D73 /* ContentView.swift */,
+				A5B909002571FBBF00FB0D73 /* SideDishView.swift */,
 				A5B909022571FBC100FB0D73 /* Assets.xcassets */,
 				A5B909072571FBC100FB0D73 /* Info.plist */,
 				A5B909042571FBC100FB0D73 /* Preview Content */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5B909012571FBBF00FB0D73 /* ContentView.swift in Sources */,
+				A5B909012571FBBF00FB0D73 /* SideDishView.swift in Sources */,
 				A5B908FF2571FBBF00FB0D73 /* SideDishApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
