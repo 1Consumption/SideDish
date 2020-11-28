@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct SideDishView: View {
+    let main: [Dish] = Dish.MakeDummyMain()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView {
+            LazyVGrid(columns: [.init()]) {
+                ForEach(0..<2) { _ in
+                    Section {
+                        ForEach(main, id: \.self) { dish in
+                            SideDishRow(dish: dish)
+                                .id(UUID())
+                        }
+                    }
+                }
+            }
+            .padding(.horizontal, 10)
+        }
     }
 }
 
