@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5372D30257225EF000CA610 /* SideDishHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5372D2F257225EF000CA610 /* SideDishHeader.swift */; };
 		A5B908FF2571FBBF00FB0D73 /* SideDishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */; };
 		A5B909012571FBBF00FB0D73 /* SideDishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B909002571FBBF00FB0D73 /* SideDishView.swift */; };
 		A5B909032571FBC100FB0D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B909022571FBC100FB0D73 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5372D2F257225EF000CA610 /* SideDishHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishHeader.swift; sourceTree = "<group>"; };
 		A5B908FB2571FBBF00FB0D73 /* SideDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishApp.swift; sourceTree = "<group>"; };
 		A5B909002571FBBF00FB0D73 /* SideDishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				A5B909072571FBC100FB0D73 /* Info.plist */,
 				A5B909102571FE3300FB0D73 /* SideDishRow.swift */,
 				A5B9091C25720C6200FB0D73 /* BadgeView.swift */,
+				A5372D2F257225EF000CA610 /* SideDishHeader.swift */,
 			);
 			path = SideDish;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5372D30257225EF000CA610 /* SideDishHeader.swift in Sources */,
 				A5B909112571FE3300FB0D73 /* SideDishRow.swift in Sources */,
 				A5B909152572030300FB0D73 /* Dish.swift in Sources */,
 				A5B909012571FBBF00FB0D73 /* SideDishView.swift in Sources */,
