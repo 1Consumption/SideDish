@@ -30,5 +30,6 @@ struct SideDishView: View {
 struct SideDishView_Previews: PreviewProvider{
     static var previews: some View {
         SideDishView()
+            .considerStatusBar()
     }
 }
