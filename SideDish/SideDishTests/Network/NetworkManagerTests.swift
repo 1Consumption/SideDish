@@ -10,14 +10,14 @@ import Combine
 import XCTest
 
 class NetworkManagerTests: XCTestCase {
-    private let networkManager: DataPublishable = NetworkManager()
+    private var networkManager: DataPublishable!
     private var cancelables: Set<AnyCancellable> = Set<AnyCancellable>()
     
     func testPublishSueccess() {
+        networkManager = MockNetworkSuccessManager()
         let expectation = XCTestExpectation(description: "testPublishSueccess")
         
-        let url = EndPoint.init(path: .main).url
-        networkManager.publishDataTask(from: url, method: .get, headers: nil)
+        networkManager.publishDataTask(from: URL(string: ""), method: .get, headers: nil)
             .sink { result in
                 switch result {
                 case .failure(_):
@@ -33,6 +33,7 @@ class NetworkManagerTests: XCTestCase {
     }
     
     func testPublishFailureWithRequestError() {
+        networkManager = MockNetworkFailureManager(error: .requestError)
         let expectation = XCTestExpectation(description: "testPublishFailureWithRequestError")
         
         let url: URL? = nil
@@ -53,6 +54,7 @@ class NetworkManagerTests: XCTestCase {
     }
     
     func testPublishFailureWithInvalidStatusCode() {
+        networkManager = MockNetworkFailureManager(error: .invalidStatusCode(404))
         let expectation = XCTestExpectation(description: "testPublishFailureWithInvalidStatusCode")
         
         let url: URL? = URL(string: "https://github.com/HanseopShin")
@@ -78,6 +80,7 @@ class NetworkManagerTests: XCTestCase {
     }
     
     func testPublishFailureWithUnkonwnError() {
+        networkManager = MockNetworkFailureManager(error: .unknownError(""))
         let expectation = XCTestExpectation(description: "testPublishFailureWithUnkonwnError")
         
         let url: URL? = URL(string: "testtest")
