@@ -8,17 +8,11 @@
 import SwiftUI
 
 struct SideDishView: View {
-    let main: [Dish] = Dish.MakeDummyMain()
-    
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [.init()], pinnedViews: [.sectionHeaders]) {
                 ForEach(0..<2) { _ in
                     Section(header: SideDishHeader(category: "밑반찬", description: "언제 먹어도 든든한 밑반찬")) {
-                        ForEach(main, id: \.self) { dish in
-                            SideDishRow(dish: dish)
-                                .id(UUID())
-                        }
                     }
                 }
             }

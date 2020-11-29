@@ -26,7 +26,7 @@ struct SideDishRow: View {
                     .font(.caption2)
                     .foregroundColor(.gray)
                 HStack {
-                    if let originalPrice = dish.originalPirce {
+                    if let originalPrice = dish.originalPrice {
                         Text(originalPrice)
                             .font(.caption2)
                             .foregroundColor(.gray)
@@ -41,8 +41,10 @@ struct SideDishRow: View {
                     ForEach(dish.deliveryType, id: \.self) { event in
                         BadgeView(title: event, textColor: .white, backgroundColor: .purple)
                     }
-                    ForEach(dish.bagde, id: \.self) { event in
-                        BadgeView(title: event, textColor: .white, backgroundColor: .orange)
+                    if let badges = dish.badge {
+                        ForEach(badges, id: \.self) { event in
+                            BadgeView(title: event, textColor: .white, backgroundColor: .orange)
+                        }
                     }
                 }
             }
