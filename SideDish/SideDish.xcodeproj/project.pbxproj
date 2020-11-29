@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50A20252573C658003473EA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A20242573C658003473EA /* NetworkError.swift */; };
 		A5372D30257225EF000CA610 /* SideDishHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5372D2F257225EF000CA610 /* SideDishHeader.swift */; };
 		A5372D35257236A1000CA610 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5372D34257236A1000CA610 /* View.swift */; };
 		A5372D39257236C8000CA610 /* StatusBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5372D38257236C8000CA610 /* StatusBarModifier.swift */; };
 		A5ADD715257398730052E355 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD714257398730052E355 /* EndPoint.swift */; };
 		A5ADD71F257399B80052E355 /* EndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD71E257399B80052E355 /* EndPointTests.swift */; };
+		A5ADD72F2573B5AF0052E355 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD72E2573B5AF0052E355 /* NetworkError.swift */; };
+		A5ADD7332573B5D20052E355 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD7322573B5D20052E355 /* HTTPMethod.swift */; };
+		A5ADD7372573B5EA0052E355 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD7362573B5EA0052E355 /* HTTPHeaders.swift */; };
+		A5ADD7402573B81D0052E355 /* HTTPHeadersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD73F2573B81D0052E355 /* HTTPHeadersTests.swift */; };
 		A5B908FF2571FBBF00FB0D73 /* SideDishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */; };
 		A5B909012571FBBF00FB0D73 /* SideDishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B909002571FBBF00FB0D73 /* SideDishView.swift */; };
 		A5B909032571FBC100FB0D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B909022571FBC100FB0D73 /* Assets.xcassets */; };
@@ -33,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A50A20242573C658003473EA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		A5372D2F257225EF000CA610 /* SideDishHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishHeader.swift; sourceTree = "<group>"; };
 		A5372D34257236A1000CA610 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		A5372D38257236C8000CA610 /* StatusBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarModifier.swift; sourceTree = "<group>"; };
@@ -40,6 +46,10 @@
 		A5ADD71C257399B80052E355 /* SideDishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideDishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5ADD71E257399B80052E355 /* EndPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointTests.swift; sourceTree = "<group>"; };
 		A5ADD720257399B80052E355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5ADD72E2573B5AF0052E355 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A5ADD7322573B5D20052E355 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		A5ADD7362573B5EA0052E355 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		A5ADD73F2573B81D0052E355 /* HTTPHeadersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeadersTests.swift; sourceTree = "<group>"; };
 		A5B908FB2571FBBF00FB0D73 /* SideDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishApp.swift; sourceTree = "<group>"; };
 		A5B909002571FBBF00FB0D73 /* SideDishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishView.swift; sourceTree = "<group>"; };
@@ -70,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A50A20232573C649003473EA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A50A20242573C658003473EA /* NetworkError.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A5372D37257236BE000CA610 /* Modifier */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				A5ADD714257398730052E355 /* EndPoint.swift */,
+				A5ADD72E2573B5AF0052E355 /* NetworkError.swift */,
+				A5ADD7322573B5D20052E355 /* HTTPMethod.swift */,
+				A5ADD7362573B5EA0052E355 /* HTTPHeaders.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -97,10 +118,21 @@
 		A5ADD71D257399B80052E355 /* SideDishTests */ = {
 			isa = PBXGroup;
 			children = (
-				A5ADD71E257399B80052E355 /* EndPointTests.swift */,
+				A50A20232573C649003473EA /* Extension */,
+				A5ADD73E2573B80B0052E355 /* Network */,
 				A5ADD720257399B80052E355 /* Info.plist */,
 			);
 			path = SideDishTests;
+			sourceTree = "<group>";
+		};
+		A5ADD73E2573B80B0052E355 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A5ADD71E257399B80052E355 /* EndPointTests.swift */,
+				A5ADD73F2573B81D0052E355 /* HTTPHeadersTests.swift */,
+				A5ADD7452573B9920052E355 /* NetworkManagerTests.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		A5B908F22571FBBF00FB0D73 = {
@@ -256,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50A20252573C658003473EA /* NetworkError.swift in Sources */,
+				A5ADD7402573B81D0052E355 /* HTTPHeadersTests.swift in Sources */,
 				A5ADD71F257399B80052E355 /* EndPointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +306,11 @@
 				A5B909012571FBBF00FB0D73 /* SideDishView.swift in Sources */,
 				A5B9091925720A9B00FB0D73 /* Color.swift in Sources */,
 				A5B908FF2571FBBF00FB0D73 /* SideDishApp.swift in Sources */,
+				A5ADD7332573B5D20052E355 /* HTTPMethod.swift in Sources */,
 				A5372D39257236C8000CA610 /* StatusBarModifier.swift in Sources */,
+				A5ADD72F2573B5AF0052E355 /* NetworkError.swift in Sources */,
 				A5B9091D25720C6200FB0D73 /* BadgeView.swift in Sources */,
+				A5ADD7372573B5EA0052E355 /* HTTPHeaders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
