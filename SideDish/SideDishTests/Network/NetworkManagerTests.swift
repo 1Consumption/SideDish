@@ -14,7 +14,7 @@ class NetworkManagerTests: XCTestCase {
     private var cancelables: Set<AnyCancellable> = Set<AnyCancellable>()
     
     func testPublishSueccess() {
-        networkManager = MockNetworkSuccessManager()
+        networkManager = MockNetworkSuccessManager(model: Data())
         let expectation = XCTestExpectation(description: "testPublishSueccess")
         
         networkManager.publishDataTask(from: URL(string: ""), method: .get, headers: nil)

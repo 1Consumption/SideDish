@@ -9,9 +9,17 @@
 import Combine
 import Foundation
 
-struct MockNetworkSuccessManager: DataPublishable {
+struct MockNetworkSuccessManager<T>: DataPublishable where T: Codable {
+    var data: Data
+    
+    init(model: T) {
+        let encoder = JSONEncoder()
+        let result = try! encoder.encode(model)
+        data = result
+    }
+    
     func publishDataTask(from url: URL?, method: HTTPMethod, headers: HTTPHeaders?) -> AnyPublisher<Data, NetworkError> {
-        return Just(Data())
+        return Just(data)
             .setFailureType(to: NetworkError.self)
             .eraseToAnyPublisher()
     }

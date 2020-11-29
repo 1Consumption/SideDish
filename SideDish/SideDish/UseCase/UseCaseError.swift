@@ -10,5 +10,4 @@ import Foundation
 enum UseCaseError: Error {
     case decodeError
     case networkError(NetworkError)
-    case unknownError(String)
 }
