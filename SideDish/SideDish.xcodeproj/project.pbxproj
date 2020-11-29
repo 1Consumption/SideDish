@@ -16,7 +16,9 @@
 		A5ADD72F2573B5AF0052E355 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD72E2573B5AF0052E355 /* NetworkError.swift */; };
 		A5ADD7332573B5D20052E355 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD7322573B5D20052E355 /* HTTPMethod.swift */; };
 		A5ADD7372573B5EA0052E355 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD7362573B5EA0052E355 /* HTTPHeaders.swift */; };
+		A5ADD73B2573B6050052E355 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD73A2573B6050052E355 /* NetworkManager.swift */; };
 		A5ADD7402573B81D0052E355 /* HTTPHeadersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD73F2573B81D0052E355 /* HTTPHeadersTests.swift */; };
+		A5ADD7462573B9920052E355 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADD7452573B9920052E355 /* NetworkManagerTests.swift */; };
 		A5B908FF2571FBBF00FB0D73 /* SideDishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */; };
 		A5B909012571FBBF00FB0D73 /* SideDishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B909002571FBBF00FB0D73 /* SideDishView.swift */; };
 		A5B909032571FBC100FB0D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B909022571FBC100FB0D73 /* Assets.xcassets */; };
@@ -49,7 +51,9 @@
 		A5ADD72E2573B5AF0052E355 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		A5ADD7322573B5D20052E355 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		A5ADD7362573B5EA0052E355 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		A5ADD73A2573B6050052E355 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A5ADD73F2573B81D0052E355 /* HTTPHeadersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeadersTests.swift; sourceTree = "<group>"; };
+		A5ADD7452573B9920052E355 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		A5B908FB2571FBBF00FB0D73 /* SideDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishApp.swift; sourceTree = "<group>"; };
 		A5B909002571FBBF00FB0D73 /* SideDishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishView.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				A5ADD72E2573B5AF0052E355 /* NetworkError.swift */,
 				A5ADD7322573B5D20052E355 /* HTTPMethod.swift */,
 				A5ADD7362573B5EA0052E355 /* HTTPHeaders.swift */,
+				A5ADD73A2573B6050052E355 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5ADD7462573B9920052E355 /* NetworkManagerTests.swift in Sources */,
 				A50A20252573C658003473EA /* NetworkError.swift in Sources */,
 				A5ADD7402573B81D0052E355 /* HTTPHeadersTests.swift in Sources */,
 				A5ADD71F257399B80052E355 /* EndPointTests.swift in Sources */,
@@ -308,6 +314,7 @@
 				A5B908FF2571FBBF00FB0D73 /* SideDishApp.swift in Sources */,
 				A5ADD7332573B5D20052E355 /* HTTPMethod.swift in Sources */,
 				A5372D39257236C8000CA610 /* StatusBarModifier.swift in Sources */,
+				A5ADD73B2573B6050052E355 /* NetworkManager.swift in Sources */,
 				A5ADD72F2573B5AF0052E355 /* NetworkError.swift in Sources */,
 				A5B9091D25720C6200FB0D73 /* BadgeView.swift in Sources */,
 				A5ADD7372573B5EA0052E355 /* HTTPHeaders.swift in Sources */,
