@@ -5,6 +5,7 @@
 //  Created by 신한섭 on 2020/11/28.
 //
 
+import KingfisherSwiftUI
 import SwiftUI
 
 struct SideDishRow: View {
@@ -12,7 +13,8 @@ struct SideDishRow: View {
     
     var body: some View {
         HStack(alignment: .center, spacing: 10) {
-            Image(dish.image)
+            KFImage(URL(string: dish.image))
+                .cancelOnDisappear(true)
                 .resizable()
                 .aspectRatio(1, contentMode: .fit)
                 .frame(width: 80)
