@@ -12,6 +12,12 @@ struct DishResponse: Decodable {
     let body: [Dish]
 }
 
+struct DishWithTitle: Hashable {
+    let title: String
+    let subTitle: String
+    let dish: [Dish]
+}
+
 struct Dish: Hashable, Decodable {
     let detailHash: String
     let image: String
@@ -32,12 +38,6 @@ struct Dish: Hashable, Decodable {
         case specialPrice = "s_price"
         case badge
     }
-}
-
-enum DishCategory {
-    case main
-    case side
-    case soup
 }
 
 extension Dish {
