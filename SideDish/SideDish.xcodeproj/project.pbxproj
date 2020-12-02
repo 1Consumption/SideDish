@@ -15,6 +15,7 @@
 		A5206FF525761EE3009ED7CC /* SideDishViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206FF425761EE3009ED7CC /* SideDishViewModelTests.swift */; };
 		A52BF8CF2573D4E800246734 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BF8CE2573D4E800246734 /* MockNetworkManager.swift */; };
 		A52BF8D6257427E700246734 /* RetrievePublisherableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BF8D5257427E700246734 /* RetrievePublisherableTests.swift */; };
+		A5370E122577DBDF002AFBEE /* SideDishGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5370E112577DBDF002AFBEE /* SideDishGridView.swift */; };
 		A5372D30257225EF000CA610 /* SideDishHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5372D2F257225EF000CA610 /* SideDishHeader.swift */; };
 		A5372D35257236A1000CA610 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5372D34257236A1000CA610 /* View.swift */; };
 		A5372D39257236C8000CA610 /* StatusBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5372D38257236C8000CA610 /* StatusBarModifier.swift */; };
@@ -61,6 +62,7 @@
 		A5206FF425761EE3009ED7CC /* SideDishViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishViewModelTests.swift; sourceTree = "<group>"; };
 		A52BF8CE2573D4E800246734 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		A52BF8D5257427E700246734 /* RetrievePublisherableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrievePublisherableTests.swift; sourceTree = "<group>"; };
+		A5370E112577DBDF002AFBEE /* SideDishGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishGridView.swift; sourceTree = "<group>"; };
 		A5372D2F257225EF000CA610 /* SideDishHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishHeader.swift; sourceTree = "<group>"; };
 		A5372D34257236A1000CA610 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		A5372D38257236C8000CA610 /* StatusBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarModifier.swift; sourceTree = "<group>"; };
@@ -145,6 +147,27 @@
 				A52BF8D5257427E700246734 /* RetrievePublisherableTests.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A5370E0F2577DB63002AFBEE /* SideDishListView */ = {
+			isa = PBXGroup;
+			children = (
+				A5B909002571FBBF00FB0D73 /* SideDishView.swift */,
+				A5B909102571FE3300FB0D73 /* SideDishRow.swift */,
+				A5372D2F257225EF000CA610 /* SideDishHeader.swift */,
+				A5370E112577DBDF002AFBEE /* SideDishGridView.swift */,
+			);
+			path = SideDishListView;
+			sourceTree = "<group>";
+		};
+		A5370E102577DB82002AFBEE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A5372D37257236BE000CA610 /* Modifier */,
+				A5B9091725720A9200FB0D73 /* Extension */,
+				A5B9091C25720C6200FB0D73 /* BadgeView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		A5372D37257236BE000CA610 /* Modifier */ = {
@@ -239,19 +262,15 @@
 		A5B908FD2571FBBF00FB0D73 /* SideDish */ = {
 			isa = PBXGroup;
 			children = (
+				A5370E102577DB82002AFBEE /* Common */,
+				A5370E0F2577DB63002AFBEE /* SideDishListView */,
 				A50A202E2573C973003473EA /* UseCase */,
 				A5ADD7132573986A0052E355 /* Network */,
-				A5372D37257236BE000CA610 /* Modifier */,
 				A5B909042571FBC100FB0D73 /* Preview Content */,
 				A5877A6D2572126200F9E6B1 /* Model */,
-				A5B9091725720A9200FB0D73 /* Extension */,
 				A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */,
-				A5B909002571FBBF00FB0D73 /* SideDishView.swift */,
 				A5B909022571FBC100FB0D73 /* Assets.xcassets */,
 				A5B909072571FBC100FB0D73 /* Info.plist */,
-				A5B909102571FE3300FB0D73 /* SideDishRow.swift */,
-				A5B9091C25720C6200FB0D73 /* BadgeView.swift */,
-				A5372D2F257225EF000CA610 /* SideDishHeader.swift */,
 			);
 			path = SideDish;
 			sourceTree = "<group>";
@@ -406,6 +425,7 @@
 				A50A203A2573D15C003473EA /* RetrievePublisherable.swift in Sources */,
 				A5372D39257236C8000CA610 /* StatusBarModifier.swift in Sources */,
 				A5ADD73B2573B6050052E355 /* NetworkManager.swift in Sources */,
+				A5370E122577DBDF002AFBEE /* SideDishGridView.swift in Sources */,
 				A5ADD72F2573B5AF0052E355 /* NetworkError.swift in Sources */,
 				A5B9091D25720C6200FB0D73 /* BadgeView.swift in Sources */,
 				A5ADD7372573B5EA0052E355 /* HTTPHeaders.swift in Sources */,
