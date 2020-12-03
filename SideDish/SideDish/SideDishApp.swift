@@ -11,7 +11,8 @@ import SwiftUI
 struct SideDishApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SideDishView()
+                .considerStatusBar()
         }
     }
 }
