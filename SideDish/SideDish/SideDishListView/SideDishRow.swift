@@ -23,6 +23,7 @@ struct SideDishRow: View {
             VStack(alignment: .leading, spacing: 3) {
                 Text(dish.title)
                     .font(.caption)
+                    .foregroundColor(.black)
                     .bold()
                 Text(dish.description)
                     .font(.caption2)

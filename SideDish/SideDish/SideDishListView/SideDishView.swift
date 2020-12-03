@@ -11,11 +11,11 @@ struct SideDishView: View {
     @ObservedObject var viewModel: SideDishViewModel = SideDishViewModel()
     
     var body: some View {
-        ScrollView {
+        NavigationView {
             switch viewModel.state {
             case .done:
                 SideDishGridView(sideDish: viewModel.sideDish)
-                .padding(.horizontal, 10)
+                    .navigationBarHidden(true)
             case .failure(_):
                 Button(action: {
                     viewModel.retrieveDish()
@@ -27,7 +27,7 @@ struct SideDishView: View {
                         .clipShape(Circle())
                 })
             default:
-                EmptyView()
+                AnyView(Color.clear)
             }
         }
         .onAppear(perform: {
@@ -36,7 +36,7 @@ struct SideDishView: View {
     }
 }
 
-struct SideDishView_Previews: PreviewProvider{
+struct SideDishView_Previews: PreviewProvider {
     static var previews: some View {
         SideDishView()
             .considerStatusBar()

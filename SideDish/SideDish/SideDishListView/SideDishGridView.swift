@@ -15,14 +15,52 @@ struct SideDishGridView: View {
     }
     
     var body: some View {
-        LazyVGrid(columns: [.init()], pinnedViews: [.sectionHeaders]) {
-            ForEach(sideDish, id: \.self) { category in
-                Section(header: SideDishHeader(category: category.title, description: category.subTitle)) {
-                    ForEach(category.dish, id: \.self) {
-                        SideDishRow(dish: $0)
-                    }
+        ScrollView {
+            LazyVGrid(columns: [.init()], pinnedViews: [.sectionHeaders]) {
+                ForEach(sideDish, id: \.self) { category in
+                    SectionView(category: category)
                 }
             }
+            .padding(.horizontal, 10)
         }
+    }
+}
+
+struct SectionView: View {
+    private let category: DishWithTitle
+    
+    init(category: DishWithTitle) {
+        self.category = category
+    }
+    
+    var body: some View {
+        Section(header: SideDishHeader(category: category.title, description: category.subTitle)) {
+            ForEach(category.dish, id: \.self) { sideDish in
+                NavigationLink(
+                    destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                    label: {
+                        SideDishRow(dish: sideDish)
+                    })
+            }
+        }
+    }
+}
+
+struct SideDishGridView_Previews: PreviewProvider {
+    static var previews: some View {
+        SideDishGridView(sideDish: [
+            DishWithTitle(title: DishCategory.main.title,
+                          subTitle: DishCategory.main.subTitle,
+                          dish: [Dish.MakeDummyDish()])
+        ])
+    }
+}
+
+struct SectionView_Previews: PreviewProvider {
+    static var previews: some View {
+        SectionView(category: DishWithTitle(title: DishCategory.main.title,
+                                            subTitle: DishCategory.main.subTitle,
+                                            dish: [Dish.MakeDummyDish()]))
+            .previewLayout(.fixed(width: 300, height: 100))
     }
 }
