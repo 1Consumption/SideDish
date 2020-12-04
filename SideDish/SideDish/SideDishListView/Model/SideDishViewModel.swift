@@ -30,7 +30,7 @@ final class SideDishViewModel: ObservableObject {
             .sink { [weak self] result in
                 guard case .failure(let error) = result else { return }
                 self?.isErrorOccured = true
-                self?.errorMessage = error.localizedDescription
+                self?.errorMessage = error.errorMessage
             } receiveValue: { [weak self] value in
                 self?.sideDish.append(value.0)
                 self?.sideDish.append(value.1)

@@ -14,7 +14,15 @@ struct SideDishView: View {
         NavigationView {
             SideDishGridView(sideDish: viewModel.sideDish)
                 .navigationBarHidden(true)
-        }
+        }.alert(isPresented: $viewModel.isErrorOccured, content: {
+            Alert(title: Text(viewModel.errorMessage),
+                  message: nil,
+                  primaryButton: .cancel(),
+                  secondaryButton: .default(Text("다시 시도"),
+                                            action: {
+                                                viewModel.retrieveDish()
+                                            }) )
+        })
     }
 }
 
