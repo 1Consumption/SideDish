@@ -154,10 +154,8 @@
 		A5370E0F2577DB63002AFBEE /* SideDishListView */ = {
 			isa = PBXGroup;
 			children = (
-				A5B909002571FBBF00FB0D73 /* SideDishView.swift */,
-				A5B909102571FE3300FB0D73 /* SideDishRow.swift */,
-				A5372D2F257225EF000CA610 /* SideDishHeader.swift */,
-				A5370E112577DBDF002AFBEE /* SideDishGridView.swift */,
+				A5B21B56257AA01C000B988D /* Model */,
+				A5B21B55257AA014000B988D /* View */,
 			);
 			path = SideDishListView;
 			sourceTree = "<group>";
@@ -178,16 +176,6 @@
 				A5372D38257236C8000CA610 /* StatusBarModifier.swift */,
 			);
 			path = Modifier;
-			sourceTree = "<group>";
-		};
-		A5877A6D2572126200F9E6B1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A5B909142572030300FB0D73 /* Dish.swift */,
-				A5206FF025761CBA009ED7CC /* DishCategory.swift */,
-				A5DC654A25752E7100E099E5 /* SideDishViewModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		A58AABA925742FA70048FD1B /* Mock */ = {
@@ -243,6 +231,27 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		A5B21B55257AA014000B988D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5B909002571FBBF00FB0D73 /* SideDishView.swift */,
+				A5B909102571FE3300FB0D73 /* SideDishRow.swift */,
+				A5372D2F257225EF000CA610 /* SideDishHeader.swift */,
+				A5370E112577DBDF002AFBEE /* SideDishGridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5B21B56257AA01C000B988D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5B909142572030300FB0D73 /* Dish.swift */,
+				A5206FF025761CBA009ED7CC /* DishCategory.swift */,
+				A5DC654A25752E7100E099E5 /* SideDishViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A5B908F22571FBBF00FB0D73 = {
 			isa = PBXGroup;
 			children = (
@@ -269,7 +278,6 @@
 				A50A202E2573C973003473EA /* UseCase */,
 				A5ADD7132573986A0052E355 /* Network */,
 				A5B909042571FBC100FB0D73 /* Preview Content */,
-				A5877A6D2572126200F9E6B1 /* Model */,
 				A5B908FE2571FBBF00FB0D73 /* SideDishApp.swift */,
 				A5B909022571FBC100FB0D73 /* Assets.xcassets */,
 				A5B909072571FBC100FB0D73 /* Info.plist */,
