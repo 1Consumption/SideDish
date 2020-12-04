@@ -9,19 +9,15 @@ import Combine
 import Foundation
 
 final class SideDishViewModel: ObservableObject {
-    @Published var state: SubscribeState = .yet
-    private(set) var sideDish: [DishWithTitle] = [DishWithTitle]()
+    @Published var sideDish: [DishWithTitle] = [DishWithTitle]()
+    @Published var isErrorOccured: Bool = false
+    @Published var errorMessage: String = ""
     private var bag: Set<AnyCancellable> = Set<AnyCancellable>()
     private let useCase: DishUseCase
     
     init(dataPublisher: DataPublishable = NetworkManager()) {
         useCase = DishUseCase(dataPublisher: dataPublisher)
-    }
-    
-    enum SubscribeState {
-        case yet
-        case failure(UseCaseError)
-        case done
+        retrieveDish()
     }
 
     func retrieveDish() {
@@ -30,13 +26,11 @@ final class SideDishViewModel: ObservableObject {
         let side = dishPublisher(with: .side)
         
         Publishers.Zip3(main, soup, side)
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] result in
-                switch result {
-                case .failure(let error):
-                    self?.state = .failure(error)
-                case .finished:
-                    self?.state = .done
-                }
+                guard case .failure(let error) = result else { return }
+                self?.isErrorOccured = true
+                self?.errorMessage = error.localizedDescription
             } receiveValue: { [weak self] value in
                 self?.sideDish.append(value.0)
                 self?.sideDish.append(value.1)

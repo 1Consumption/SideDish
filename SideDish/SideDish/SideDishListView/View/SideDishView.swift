@@ -12,27 +12,9 @@ struct SideDishView: View {
     
     var body: some View {
         NavigationView {
-            switch viewModel.state {
-            case .done:
-                SideDishGridView(sideDish: viewModel.sideDish)
-                    .navigationBarHidden(true)
-            case .failure(_):
-                Button(action: {
-                    viewModel.retrieveDish()
-                }, label: {
-                    Image(systemName: "arrow.clockwise")
-                        .padding()
-                        .background(Color.labelColor)
-                        .foregroundColor(.backgroundColor)
-                        .clipShape(Circle())
-                })
-            default:
-                AnyView(Color.clear)
-            }
+            SideDishGridView(sideDish: viewModel.sideDish)
+                .navigationBarHidden(true)
         }
-        .onAppear(perform: {
-            viewModel.retrieveDish()
-        })
     }
 }
 

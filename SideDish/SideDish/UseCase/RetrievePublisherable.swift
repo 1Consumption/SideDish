@@ -26,7 +26,6 @@ extension RetrievePublisherable {
                 
                 return .decodeError
             })
-            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 }
