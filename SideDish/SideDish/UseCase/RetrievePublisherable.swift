@@ -12,13 +12,13 @@ protocol RetrievePublisherable where T: Decodable {
     associatedtype T
     var dataPublisher: DataPublishable { get }
     
-    func retrievePublisher(with url: URL?, method: HTTPMethod, headers: HTTPHeaders?) -> AnyPublisher<T, UseCaseError>
+    func retrievePublisher(with url: URL?, method: HTTPMethod, headers: HTTPHeaders?, decoder: JSONDecoder) -> AnyPublisher<T, UseCaseError>
 }
 
 extension RetrievePublisherable {
-    func retrievePublisher(with url: URL?, method: HTTPMethod, headers: HTTPHeaders?) -> AnyPublisher<T, UseCaseError> {
+    func retrievePublisher(with url: URL?, method: HTTPMethod, headers: HTTPHeaders?, decoder: JSONDecoder = JSONDecoder()) -> AnyPublisher<T, UseCaseError> {
         return dataPublisher.publishDataTask(from: url, method: method, headers: headers)
-            .decode(type: T.self, decoder: JSONDecoder())
+            .decode(type: T.self, decoder: decoder)
             .mapError({ error -> UseCaseError in
                 if let networkError = error as? NetworkError {
                     return UseCaseError.networkError(networkError)
