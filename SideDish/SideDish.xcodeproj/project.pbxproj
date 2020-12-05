@@ -42,6 +42,7 @@
 		A5B9091925720A9B00FB0D73 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9091825720A9B00FB0D73 /* Color.swift */; };
 		A5B9091D25720C6200FB0D73 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9091C25720C6200FB0D73 /* BadgeView.swift */; };
 		A5DC654B25752E7100E099E5 /* SideDishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC654A25752E7100E099E5 /* SideDishViewModel.swift */; };
+		A5EB3C53257B4BDB00737BF6 /* SideDishDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB3C52257B4BDB00737BF6 /* SideDishDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		A5B9091825720A9B00FB0D73 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A5B9091C25720C6200FB0D73 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		A5DC654A25752E7100E099E5 /* SideDishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishViewModel.swift; sourceTree = "<group>"; };
+		A5EB3C52257B4BDB00737BF6 /* SideDishDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				A5370E102577DB82002AFBEE /* Common */,
+				A5EB3C51257B4BBB00737BF6 /* SideDishDetailView */,
 				A5370E0F2577DB63002AFBEE /* SideDishListView */,
 				A50A202E2573C973003473EA /* UseCase */,
 				A5ADD7132573986A0052E355 /* Network */,
@@ -300,6 +303,14 @@
 				A5372D34257236A1000CA610 /* View.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A5EB3C51257B4BBB00737BF6 /* SideDishDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A5EB3C52257B4BDB00737BF6 /* SideDishDetail.swift */,
+			);
+			path = SideDishDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +447,7 @@
 				A5B909152572030300FB0D73 /* Dish.swift in Sources */,
 				A5B909012571FBBF00FB0D73 /* SideDishView.swift in Sources */,
 				A5B9091925720A9B00FB0D73 /* Color.swift in Sources */,
+				A5EB3C53257B4BDB00737BF6 /* SideDishDetail.swift in Sources */,
 				A5B908FF2571FBBF00FB0D73 /* SideDishApp.swift in Sources */,
 				A5ADD7332573B5D20052E355 /* HTTPMethod.swift in Sources */,
 				A50A203A2573D15C003473EA /* RetrievePublisherable.swift in Sources */,
