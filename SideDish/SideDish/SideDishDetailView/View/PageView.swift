@@ -10,21 +10,19 @@ import SwiftUI
 
 struct PageView: View {
     private let imageUrl: [String]
-    private let size: CGSize
     
-    init(imageUrl: [String], size: CGSize) {
+    init(imageUrl: [String]) {
         self.imageUrl = imageUrl
-        self.size = size
     }
     
     var body: some View {
-        LazyHStack {
+        GeometryReader { geometry in
             TabView {
                 ForEach(imageUrl, id:\.self) {
                     KFImage(URL(string: $0))
                         .resizable()
                         .scaledToFill()
-                        .frame(width: size.width, height: size.height * 0.4)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
                 }
             }
             .tabViewStyle(PageTabViewStyle())
@@ -39,8 +37,7 @@ struct PageView_Previews: PreviewProvider {
             "http://public.codesquad.kr/jk/storeapp/data/detail/H26C7/f945d8ac1dccc3f931bcaf35de5de582.jpg",
             "http://public.codesquad.kr/jk/storeapp/data/detail/H26C7/bacb0b8186371bfafbd92dbeec718e13.jpg",
             "http://public.codesquad.kr/jk/storeapp/data/detail/H26C7/b96b02e9a956c6d5ad1e10eb14ba81e0.jpg"
-        ],
-        size: CGSize(width: 300, height: 200))
+        ])
         .previewLayout(.fixed(width: 300, height: 200))
     }
 }

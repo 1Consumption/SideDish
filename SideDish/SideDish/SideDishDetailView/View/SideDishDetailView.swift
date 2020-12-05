@@ -22,8 +22,19 @@ struct SideDishDetailView: View {
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
-                if let images = viewModel.sideDishDetail?.data.thumbImages {
-                    PageView(imageUrl: images, size: geometry.size)
+                if let detail = viewModel.sideDishDetail?.data {
+                    VStack {
+                        PageView(imageUrl: detail.thumbImages)
+                            .frame(width: geometry.size.width, height: geometry.size.height * 0.4)
+                        InformationViewGroup(title: title,
+                                             productDescription: detail.productDescription,
+                                             prices: detail.prices,
+                                             point: detail.point,
+                                             deliveryFee: detail.deliveryFee,
+                                             deliveryInfo: detail.deliveryInfo)
+                            .padding(20)
+                        }
+                    }
                 }
             }
         }
@@ -36,6 +47,6 @@ struct SideDishDetailView: View {
 
 struct SideDishDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        SideDishDetailView(key: "", title: "")
+        SideDishDetailView(key: "HBDEF", title: "[미노리키친] 규동 250g")
     }
 }
