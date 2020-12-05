@@ -11,6 +11,7 @@
 		A50A20322573CB16003473EA /* DishUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A20312573CB15003473EA /* DishUseCase.swift */; };
 		A50A20362573D12E003473EA /* UseCaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A20352573D12E003473EA /* UseCaseError.swift */; };
 		A50A203A2573D15C003473EA /* RetrievePublisherable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A20392573D15C003473EA /* RetrievePublisherable.swift */; };
+		A5151F8B257B667100AD873D /* SideDishDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5151F8A257B667100AD873D /* SideDishDetailViewModelTests.swift */; };
 		A5206FF125761CBA009ED7CC /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206FF025761CBA009ED7CC /* DishCategory.swift */; };
 		A5206FF525761EE3009ED7CC /* SideDishViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206FF425761EE3009ED7CC /* SideDishViewModelTests.swift */; };
 		A52BF8CF2573D4E800246734 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BF8CE2573D4E800246734 /* MockNetworkManager.swift */; };
@@ -43,6 +44,7 @@
 		A5B9091D25720C6200FB0D73 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9091C25720C6200FB0D73 /* BadgeView.swift */; };
 		A5DC654B25752E7100E099E5 /* SideDishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC654A25752E7100E099E5 /* SideDishViewModel.swift */; };
 		A5EB3C53257B4BDB00737BF6 /* SideDishDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB3C52257B4BDB00737BF6 /* SideDishDetail.swift */; };
+		A5EB3C5A257B546400737BF6 /* SideDishDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB3C59257B546400737BF6 /* SideDishDetailViewModel.swift */; };
 		A5EB3C60257B54EA00737BF6 /* SideDishDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB3C5F257B54EA00737BF6 /* SideDishDetailUseCase.swift */; };
 		A5EB3C66257B5A6800737BF6 /* SideDishDetailUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB3C65257B5A6800737BF6 /* SideDishDetailUseCaseTests.swift */; };
 		A5EB3C6A257B5B3200737BF6 /* SideDishDetail+Encodable, Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB3C69257B5B3200737BF6 /* SideDishDetail+Encodable, Equatable.swift */; };
@@ -63,6 +65,7 @@
 		A50A20312573CB15003473EA /* DishUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishUseCase.swift; sourceTree = "<group>"; };
 		A50A20352573D12E003473EA /* UseCaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseError.swift; sourceTree = "<group>"; };
 		A50A20392573D15C003473EA /* RetrievePublisherable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrievePublisherable.swift; sourceTree = "<group>"; };
+		A5151F8A257B667100AD873D /* SideDishDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishDetailViewModelTests.swift; sourceTree = "<group>"; };
 		A5206FF025761CBA009ED7CC /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 		A5206FF425761EE3009ED7CC /* SideDishViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishViewModelTests.swift; sourceTree = "<group>"; };
 		A52BF8CE2573D4E800246734 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 		A5B9091C25720C6200FB0D73 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		A5DC654A25752E7100E099E5 /* SideDishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishViewModel.swift; sourceTree = "<group>"; };
 		A5EB3C52257B4BDB00737BF6 /* SideDishDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishDetail.swift; sourceTree = "<group>"; };
+		A5EB3C59257B546400737BF6 /* SideDishDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishDetailViewModel.swift; sourceTree = "<group>"; };
 		A5EB3C5F257B54EA00737BF6 /* SideDishDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishDetailUseCase.swift; sourceTree = "<group>"; };
 		A5EB3C65257B5A6800737BF6 /* SideDishDetailUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishDetailUseCaseTests.swift; sourceTree = "<group>"; };
 		A5EB3C69257B5B3200737BF6 /* SideDishDetail+Encodable, Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SideDishDetail+Encodable, Equatable.swift"; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 				A5ADD73E2573B80B0052E355 /* Network */,
 				A5ADD720257399B80052E355 /* Info.plist */,
 				A5206FF425761EE3009ED7CC /* SideDishViewModelTests.swift */,
+				A5151F8A257B667100AD873D /* SideDishDetailViewModelTests.swift */,
 			);
 			path = SideDishTests;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				A5EB3C52257B4BDB00737BF6 /* SideDishDetail.swift */,
+				A5EB3C59257B546400737BF6 /* SideDishDetailViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -449,6 +455,7 @@
 				A5ADD71F257399B80052E355 /* EndPointTests.swift in Sources */,
 				A58AABBC257431F80048FD1B /* Dish+Equatable+Encodable.swift in Sources */,
 				A52BF8CF2573D4E800246734 /* MockNetworkManager.swift in Sources */,
+				A5151F8B257B667100AD873D /* SideDishDetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +479,7 @@
 				A50A203A2573D15C003473EA /* RetrievePublisherable.swift in Sources */,
 				A5372D39257236C8000CA610 /* StatusBarModifier.swift in Sources */,
 				A5ADD73B2573B6050052E355 /* NetworkManager.swift in Sources */,
+				A5EB3C5A257B546400737BF6 /* SideDishDetailViewModel.swift in Sources */,
 				A5370E122577DBDF002AFBEE /* SideDishGridView.swift in Sources */,
 				A5ADD72F2573B5AF0052E355 /* NetworkError.swift in Sources */,
 				A5B9091D25720C6200FB0D73 /* BadgeView.swift in Sources */,
