@@ -29,6 +29,7 @@ struct EndPoint {
         case main
         case side
         case soup
+        case detail(String)
         
         var description: String {
             switch self {
@@ -38,6 +39,8 @@ struct EndPoint {
                 return "/develop/baminchan/side"
             case .soup:
                 return "/develop/baminchan/soup"
+            case .detail(let key):
+                return "/develop/baminchan/detail/\(key)"
             }
         }
     }

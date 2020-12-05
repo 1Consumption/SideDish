@@ -21,7 +21,7 @@ struct SideDishView: View {
                   secondaryButton: .default(Text("다시 시도"),
                                             action: {
                                                 viewModel.retrieveDish()
-                                            }) )
+                                            }))
         })
     }
 }
