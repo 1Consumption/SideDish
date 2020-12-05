@@ -33,6 +33,11 @@ struct SideDishDetailView: View {
                                              deliveryFee: detail.deliveryFee,
                                              deliveryInfo: detail.deliveryInfo)
                             .padding(20)
+                        ForEach(detail.detailSection, id: \.self) { imageUrl in
+                            KFImage(URL(string: imageUrl))
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: geometry.size.width)
                         }
                     }
                 }
