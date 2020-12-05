@@ -37,7 +37,7 @@ struct SectionView: View {
         Section(header: SideDishHeader(category: category.title, description: category.subTitle)) {
             ForEach(category.dish, id: \.self) { sideDish in
                 NavigationLink(
-                    destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                    destination: SideDishDetailView(key: sideDish.detailHash, title: sideDish.title),
                     label: {
                         SideDishRow(dish: sideDish)
                     })

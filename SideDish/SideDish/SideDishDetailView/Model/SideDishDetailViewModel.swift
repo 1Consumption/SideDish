@@ -21,6 +21,7 @@ final class SideDishDetailViewModel: ObservableObject {
     
     func retrieveSideDishDetail(with key: String) {
         useCase.retrieveSideDishDetailPublihser(with: key)
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] state in
                 guard case .failure(let error) = state else { return }
                 self?.isErrorOccured = true
