@@ -21,4 +21,8 @@ class EndPointTests: XCTestCase {
     func testEndpointSide() {
         XCTAssertEqual(EndPoint.init(path: .side).url, URL(string: "https://h3rb9c0ugl.execute-api.ap-northeast-2.amazonaws.com/develop/baminchan/side"))
     }
+    
+    func testEndpointDetail() {
+        XCTAssertEqual(EndPoint.init(path: .detail("test")).url, URL(string: "https://h3rb9c0ugl.execute-api.ap-northeast-2.amazonaws.com/develop/baminchan/detail/test"))
+    }
 }

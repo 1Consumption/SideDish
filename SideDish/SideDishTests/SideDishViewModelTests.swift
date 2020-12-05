@@ -20,10 +20,9 @@ class SideDishViewModelTests: XCTestCase {
     func testViewModelRetrieveDataSynchronously() {
         let expecation = XCTestExpectation(description: "testViewModelRetrieveDataSynchronously")
         viewModel = SideDishViewModel(dataPublisher: MockDishDataPublisher(model1: model1, model2: model2, model3: model3))
-        viewModel.retrieveDish()
-        viewModel.$state
-            .sink { state in
-                if state == .done {
+        viewModel.$sideDish
+            .sink { result in
+                if result.count == 3 {
                     expecation.fulfill()
                 }
             }
@@ -38,9 +37,9 @@ class SideDishViewModelTests: XCTestCase {
         let expecation = XCTestExpectation(description: "testViewModelRetrieveDataFailure")
         viewModel = SideDishViewModel(dataPublisher: MockDishDataPublisher(model1: MockModel(name: "decodeFailure"), model2: MockModel(name: "decodeFailure"), model3: MockModel(name: "decodeFailure")))
         viewModel.retrieveDish()
-        viewModel.$state
-            .sink { state in
-                if state == .failure(.decodeError) {
+        viewModel.$isErrorOccured
+            .sink { isErrorOccured in
+                if isErrorOccured {
                     expecation.fulfill()
                 }
             }
@@ -61,16 +60,5 @@ extension DishWithTitle: Encodable{
         case title
         case subTitle
         case dish
-    }
-}
-
-extension SideDishViewModel.SubscribeState: Equatable {
-    public static func == (lhs: SideDishViewModel.SubscribeState, rhs: SideDishViewModel.SubscribeState) -> Bool {
-        switch (lhs, rhs) {
-        case (.done, .done), (.yet, .yet), (.failure, .failure):
-            return true
-        default:
-            return false
-        }
     }
 }

@@ -12,7 +12,7 @@ struct SideDishApp: App {
     var body: some Scene {
         WindowGroup {
             SideDishView()
-                .considerStatusBar()
+                .accentColor(.labelColor)
         }
     }
 }
