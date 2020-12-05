@@ -13,6 +13,7 @@
 		A50A203A2573D15C003473EA /* RetrievePublisherable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A20392573D15C003473EA /* RetrievePublisherable.swift */; };
 		A5151F8B257B667100AD873D /* SideDishDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5151F8A257B667100AD873D /* SideDishDetailViewModelTests.swift */; };
 		A5151F90257B708E00AD873D /* SideDishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5151F8F257B708E00AD873D /* SideDishDetailView.swift */; };
+		A5151F98257B87E700AD873D /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5151F97257B87E700AD873D /* PageView.swift */; };
 		A5206FF125761CBA009ED7CC /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206FF025761CBA009ED7CC /* DishCategory.swift */; };
 		A5206FF525761EE3009ED7CC /* SideDishViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206FF425761EE3009ED7CC /* SideDishViewModelTests.swift */; };
 		A52BF8CF2573D4E800246734 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BF8CE2573D4E800246734 /* MockNetworkManager.swift */; };
@@ -68,6 +69,7 @@
 		A50A20392573D15C003473EA /* RetrievePublisherable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrievePublisherable.swift; sourceTree = "<group>"; };
 		A5151F8A257B667100AD873D /* SideDishDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishDetailViewModelTests.swift; sourceTree = "<group>"; };
 		A5151F8F257B708E00AD873D /* SideDishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishDetailView.swift; sourceTree = "<group>"; };
+		A5151F97257B87E700AD873D /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		A5206FF025761CBA009ED7CC /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 		A5206FF425761EE3009ED7CC /* SideDishViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDishViewModelTests.swift; sourceTree = "<group>"; };
 		A52BF8CE2573D4E800246734 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A5151F8F257B708E00AD873D /* SideDishDetailView.swift */,
+				A5151F97257B87E700AD873D /* PageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				A5EB3C5A257B546400737BF6 /* SideDishDetailViewModel.swift in Sources */,
 				A5370E122577DBDF002AFBEE /* SideDishGridView.swift in Sources */,
 				A5ADD72F2573B5AF0052E355 /* NetworkError.swift in Sources */,
+				A5151F98257B87E700AD873D /* PageView.swift in Sources */,
 				A5B9091D25720C6200FB0D73 /* BadgeView.swift in Sources */,
 				A5ADD7372573B5EA0052E355 /* HTTPHeaders.swift in Sources */,
 				A5EB3C60257B54EA00737BF6 /* SideDishDetailUseCase.swift in Sources */,

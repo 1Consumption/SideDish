@@ -13,6 +13,7 @@ struct SideDishView: View {
     var body: some View {
         NavigationView {
             SideDishGridView(sideDish: viewModel.sideDish)
+                .considerStatusBar()
                 .navigationBarHidden(true)
         }.alert(isPresented: $viewModel.isErrorOccured, content: {
             Alert(title: Text(viewModel.errorMessage),

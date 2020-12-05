@@ -6,6 +6,7 @@
 //
 
 import Combine
+import KingfisherSwiftUI
 import SwiftUI
 
 struct SideDishDetailView: View {
@@ -16,19 +17,17 @@ struct SideDishDetailView: View {
     init(key: String, title: String) {
         self.key = key
         self.title = title
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithTransparentBackground()
-        appearance.backgroundColor = .systemBackground
-        UINavigationBar.appearance().standardAppearance = appearance
     }
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Text("\(viewModel.sideDishDetail?.hash ?? "")")
-                Text("\(title)")
+        GeometryReader { geometry in
+            ScrollView {
+                if let images = viewModel.sideDishDetail?.data.thumbImages {
+                    PageView(imageUrl: images, size: geometry.size)
+                }
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             viewModel.retrieveSideDishDetail(with: key)
         }
