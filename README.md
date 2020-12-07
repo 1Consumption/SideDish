@@ -1,5 +1,11 @@
 # SideDish
 
+## 데모
+
+![Demo](https://github.com/1Consumption/SideDish/blob/main/demo.gif)
+
+
+
 ## 순서가 보장되는 비동기 방식
 
 <img src = "https://user-images.githubusercontent.com/37682858/101021157-e35e7000-35b2-11eb-9efa-870d93f9e97a.gif" width = 600>
