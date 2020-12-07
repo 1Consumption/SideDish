@@ -1,5 +1,5 @@
 # SideDish
-
+[SideDish](https://github.com/1Consumption/sidedish-10)를 SwiftUI + Combine으로 구현한 프로젝트임.
 ## 데모
 
 ![Demo](https://github.com/1Consumption/SideDish/blob/main/demo.gif)
