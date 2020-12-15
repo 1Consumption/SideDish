@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SideDishView: View {
-    @ObservedObject var viewModel: SideDishViewModel = SideDishViewModel()
+    @StateObject var viewModel: SideDishViewModel = SideDishViewModel()
     
     var body: some View {
         NavigationView {

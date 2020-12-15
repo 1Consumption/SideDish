@@ -10,7 +10,7 @@ import KingfisherSwiftUI
 import SwiftUI
 
 struct SideDishDetailView: View {
-    @ObservedObject var viewModel: SideDishDetailViewModel = SideDishDetailViewModel(dataPublisher: NetworkManager())
+    @StateObject var viewModel: SideDishDetailViewModel = SideDishDetailViewModel(dataPublisher: NetworkManager())
     private let key: String
     private let title: String
     
